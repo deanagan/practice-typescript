@@ -1,4 +1,4 @@
-import assert from "assert";
+import assert, { strictEqual } from "assert";
 
 function endZeros(value: number): number {
     let endZeroCount = 0;
@@ -11,6 +11,8 @@ function endZeros(value: number): number {
             endZeroCount = 0;
         }
     }
+    let s = String(value);
+    strictEqual(endZeroCount, s.length - s.replace(/0*$/, '').length);
 
     return endZeroCount;
 }
