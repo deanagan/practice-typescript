@@ -5,7 +5,7 @@ function endZeros(value: number): number {
     let valueStr = value.toString();
 
     for (let i = 0; i < valueStr.length; i++) {
-        if (valueStr[i] == '0') {
+        if (valueStr[i] === '0') {
             endZeroCount++;
         } else {
             endZeroCount = 0;

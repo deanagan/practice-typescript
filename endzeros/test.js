@@ -8,7 +8,7 @@ function endZeros(value) {
     var endZeroCount = 0;
     var valueStr = value.toString();
     for (var i = 0; i < valueStr.length; i++) {
-        if (valueStr[i] == '0') {
+        if (valueStr[i] === '0') {
             endZeroCount++;
         }
         else {
