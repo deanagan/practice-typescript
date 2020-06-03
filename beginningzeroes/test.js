@@ -12,6 +12,7 @@ function beginningZeros(text) {
         }
         count++;
     }
+    assert_1.default.strictEqual(count, text.replace(/[^0].*$/, '').length);
     return count;
 }
 console.log('Example:');

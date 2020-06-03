@@ -9,6 +9,8 @@ function beginningZeros(text: string): number {
         }
         count++;
     }
+
+    assert.strictEqual(count, text.replace(/[^0].*$/, '').length);
     return count;
 }
 
