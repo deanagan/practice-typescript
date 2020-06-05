@@ -27,4 +27,5 @@ assert_1.default.equal(nearestValue([4, 7, 10, 11, 12, 17], 0), 4);
 assert_1.default.equal(nearestValue([4, 7, 10, 11, 12, 17], 100), 17);
 assert_1.default.equal(nearestValue([5, 10, 8, 12, 89, 100], 7), 8);
 assert_1.default.equal(nearestValue([-1, 2, 3], 0), -1);
+assert_1.default.equal(nearestValue([0, -2], -1), -2);
 console.log("Coding complete? Click 'Check' to earn cool rewards!");
