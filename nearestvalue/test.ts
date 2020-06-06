@@ -3,13 +3,13 @@ import assert from "assert";
 function nearestValue(values: number[], search: number): number {
     let nearestValue = values[0];
 
-    values.sort(function (a: number,b: number) {
-        return a - b;
-    });
     for (let i = 1; i < values.length; i++) {
-
-        if (Math.abs(search - values[i]) < Math.abs(nearestValue - search)) {
+        let curr = Math.abs(nearestValue - search);
+        let cand = Math.abs(search - values[i]);
+        if (curr > cand) {
             nearestValue = values[i];
+        } else if (curr == cand) {
+            nearestValue = Math.min(nearestValue,values[i]);
         }
     }
 
