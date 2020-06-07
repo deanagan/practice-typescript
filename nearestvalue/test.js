@@ -6,9 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const assert_1 = __importDefault(require("assert"));
 function nearestValue(values, search) {
     let nearestValue = values[0];
-    //values.sort(function (a: number,b: number) {
-    //     return a - b;
-    //});
     for (let i = 1; i < values.length; i++) {
         let curr = Math.abs(nearestValue - search);
         let cand = Math.abs(search - values[i]);
@@ -19,6 +16,9 @@ function nearestValue(values, search) {
             nearestValue = Math.min(nearestValue, values[i]);
         }
     }
+    // alternatively
+    let alternateSlnResult = values.sort((a, b) => Math.abs(search - a) - Math.abs(search - b) || a - b)[0];
+    assert_1.default.strictEqual(nearestValue, alternateSlnResult);
     return nearestValue;
 }
 console.log('Example:');

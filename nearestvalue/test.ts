@@ -12,6 +12,9 @@ function nearestValue(values: number[], search: number): number {
             nearestValue = Math.min(nearestValue,values[i]);
         }
     }
+    // alternatively
+    let alternateSlnResult = values.sort( (a,b) => Math.abs( search-a) - Math.abs(search-b) || a-b )[0];
+    assert.strictEqual(nearestValue, alternateSlnResult);
 
     return nearestValue;
 }
