@@ -1,24 +1,21 @@
-
-function endZeros(value: number): number {
+"use strict";
+function endZeros(value) {
     let endZeroCount = 0;
     let valueStr = value.toString();
-
     for (let i = 0; i < valueStr.length; i++) {
         if (valueStr[i] === '0') {
             endZeroCount++;
-        } else {
+        }
+        else {
             endZeroCount = 0;
         }
     }
     // Alternate solution
     // s.length - s.replace(/0*$/, '').length);
-
     return endZeroCount;
 }
-
 //console.log('Example:');
 //console.log(endZeros(0));
-
 // These "asserts" are used for self-checking
 //assert.equal(endZeros(0), 1);
 //assert.equal(endZeros(1), 0);

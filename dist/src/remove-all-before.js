@@ -1,13 +1,9 @@
-
-
-function removeAllBefore(values: number[], b: number): number[] {
-
+"use strict";
+function removeAllBefore(values, b) {
     return values.includes(b) ? values.slice(values.indexOf(b)) : values;
 }
-
 //console.log('Example:');
 //console.log(removeAllBefore([1, 2, 3, 4, 5], 3));
-
 // These "asserts" are used for self-checking
 // assert.deepEqual(removeAllBefore([1, 2, 3, 4, 5], 3), [3, 4, 5]);
 // assert.deepEqual(removeAllBefore([1, 1, 2, 2, 3, 3], 2), [2, 2, 3, 3]);

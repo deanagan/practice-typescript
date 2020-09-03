@@ -1,22 +1,17 @@
-
-
-function beginningZeros(text: string): number {
+"use strict";
+function beginningZeros(text) {
     let count = 0;
     for (let index = 0; index < text.length; index++) {
-
         if (text[index] !== '0') {
             break;
         }
         count++;
     }
-
     //assert.strictEqual(count, text.replace(/[^0].*$/, '').length);
     return count;
 }
-
 //console.log('Example:');
 //console.log(beginningZeros('100'));
-
 // These "asserts" are used for self-checking
 //assert.equal(beginningZeros('100'), 0);
 //assert.equal(beginningZeros('001'), 2);

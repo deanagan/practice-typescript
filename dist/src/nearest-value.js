@@ -1,27 +1,23 @@
-
-
-function nearestValue(values: number[], search: number): number {
+"use strict";
+function nearestValue(values, search) {
     let nearestValue = values[0];
-
     for (let i = 1; i < values.length; i++) {
         let curr = Math.abs(nearestValue - search);
         let cand = Math.abs(search - values[i]);
         if (curr > cand) {
             nearestValue = values[i];
-        } else if (curr == cand) {
-            nearestValue = Math.min(nearestValue,values[i]);
+        }
+        else if (curr == cand) {
+            nearestValue = Math.min(nearestValue, values[i]);
         }
     }
     // alternatively
     // let alternateSlnResult = values.sort( (a,b) => Math.abs( search-a) - Math.abs(search-b) || a-b )[0];
     // assert.strictEqual(nearestValue, alternateSlnResult);
-
     return nearestValue;
 }
-
 //console.log('Example:');
 //console.log(nearestValue([4, 7, 10, 11, 12, 17], 9));
-
 // These "asserts" are used for self-checking
 //assert.equal(nearestValue([4, 7, 10, 11, 12, 17], 9), 10);
 //assert.equal(nearestValue([4, 7, 10, 11, 12, 17], 8), 7);

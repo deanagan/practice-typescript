@@ -1,15 +1,11 @@
-
-
-function backwardString(value: string): string {
+"use strict";
+function backwardString(value) {
     // spread operator requires es6 or es2015
     // alternatively, we can say value.split('').reverse().join('');
     return [...value].reverse().join('');
-
 }
-
 //console.log.log('Example:');
 //console.log.log(backwardString('val'));
-
 // // These "asserts" are used for self-checking
 //assert.equal.equal(backwardString('val'), 'lav');
 //assert.equal.equal(backwardString(''), '');
