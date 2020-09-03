@@ -9,6 +9,6 @@
             "when": "$(basename)"
         },
         "node_modules": true,
-        "out": true,
+        "dist": true,
     }
 }
