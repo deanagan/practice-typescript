@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "mocha"
+    "test": "mocha 'dist/test/*.js'"
   },
   "repository": {
     "type": "git",
