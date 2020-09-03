@@ -1,3 +1,4 @@
+![Node.js CI](https://github.com/deanagan/practice-typescript/workflows/Node.js%20CI/badge.svg)
 # practice-typescript
 Practice Typescript
 
