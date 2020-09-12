@@ -23,4 +23,8 @@ describe("test for three words", () => {
     it("Hi should return false", () => {
         expect(threeWords("Hi")).to.be.false;
     });
+
+    it("\'one two 3 four five six 7 eight 9 ten eleven 12\'", () => {
+        expect(threeWords("one two 3 four five six 7 eight 9 ten eleven 12")).to.be.true;
+    });
 });
