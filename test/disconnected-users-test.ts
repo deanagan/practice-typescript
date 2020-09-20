@@ -1,4 +1,4 @@
-import { disconnected_users, LookUp, Pair } from "../src/disconnected-users";
+import { disconnected_users, Pair } from "../src/disconnected-users";
 import { describe, it } from "mocha";
 import { expect } from "chai";
 
