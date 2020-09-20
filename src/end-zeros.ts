@@ -1,5 +1,5 @@
 
-function endZeros(value: number): number {
+export function endZeros(value: number): number {
     let endZeroCount = 0;
     let valueStr = value.toString();
 
