@@ -1,28 +1,20 @@
+import { createPrinter, isConstructorDeclaration } from "typescript";
 
 export function endZeros(value: number): number {
     let endZeroCount = 0;
-    let valueStr = value.toString();
 
-    for (let i = 0; i < valueStr.length; i++) {
-        if (valueStr[i] === '0') {
-            endZeroCount++;
+    const numbers = [...value.toString()];
+
+    for(let n = numbers.length - 1; n >= 0; n--) {
+        if (numbers[n] !== '0') {
+            break;
         } else {
-            endZeroCount = 0;
+            endZeroCount++;
         }
     }
+
     // Alternate solution
     // s.length - s.replace(/0*$/, '').length);
 
     return endZeroCount;
 }
-
-//console.log('Example:');
-//console.log(endZeros(0));
-
-// These "asserts" are used for self-checking
-//assert.equal(endZeros(0), 1);
-//assert.equal(endZeros(1), 0);
-//assert.equal(endZeros(10), 1);
-//assert.equal(endZeros(101), 0);
-//assert.equal(endZeros(245), 0);
-//assert.equal(endZeros(100100), 2);
