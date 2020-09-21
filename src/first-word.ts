@@ -1,8 +1,8 @@
 
 
-function firstWord(text: string): string {
-
-    return text.split(' ')[0];
+export function firstWord(text: string): string {
+    // split by ',', spaces, or dots/full stop.
+    return text.split(/[\s,.]+/).filter((s) => s)[0];
 }
 
 //console.log('Example:');
