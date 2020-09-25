@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "mocha 'dist/test/*.js'",
+    "test": "tsc && mocha 'dist/test/*.js'",
     "debug-test": "mocha 'dist/test/*.js' --debug-brk"
   },
   "repository": {
