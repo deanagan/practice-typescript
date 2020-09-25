@@ -17,8 +17,9 @@ const testParameters : TestParameters[] = [
   {input: 100100, expected: 2},
 ];
 
-testParameters.forEach((tp: TestParameters) => {
-  describe("End Zeros Test", () => {
+
+describe("End Zeros Test", () => {
+  testParameters.forEach((tp: TestParameters) => {
     it(`Should return ${tp.expected} when ${tp.input} is inputted.`, () => {
       expect(endZeros(tp.input)).to.be.equal(tp.expected);
     });
