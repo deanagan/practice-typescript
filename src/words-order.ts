@@ -12,4 +12,9 @@ export function wordsOrder(text: string, words: string[]): boolean {
     }
 
     return false;
+
+    // Alternate solution
+    // return words.every((v,i)=>
+    // text.split(" ").includes(v) && text.split(v)[1].includes(words[i+1]||""));
+
 }
