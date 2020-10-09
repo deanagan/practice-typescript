@@ -2,7 +2,7 @@ import { isConstructorDeclaration } from "typescript";
 
 
 export function isStressful(subj: string) : boolean {
-    if ((subj.slice(-3) === '!!!') || (subj == subj.toUpperCase())) {
+    if (subj.endsWith('!!!') || (subj == subj.toUpperCase())) {
         return true;
     }
     const redWords = ["help", "urgent", "asap"];
