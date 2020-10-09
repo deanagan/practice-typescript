@@ -7,7 +7,7 @@ export function isStressful(subj: string) : boolean {
     }
     const redWords = ["help", "urgent", "asap"];
 
-    let clean_subject = [...subj.toLowerCase()].reduce((g, c) => {
+    const clean_subject = [...subj.toLowerCase()].reduce((g, c) => {
         return  (g.charAt(g.length - 1) != c) ? g + c : g;
     });
 
