@@ -1,16 +1,11 @@
-import { popularWords } from '../src/popular-words';
+import { popularWords, LookUp } from '../src/popular-words';
 import { describe, it } from 'mocha';
 import { expect } from 'chai';
-
-
-export interface LookUp<V> {
-    [key: string]: V;
-}
 
 interface TestParameters {
     input: string;
     wordsToFind: string[];
-    expected: LookUp<number>;
+    expected: LookUp;
   }
 
   const testParameters : TestParameters[] = [
