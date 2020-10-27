@@ -12,6 +12,7 @@ const testParameters : TestParameter[] = [
     { input: "sims", search: "s", expected: 3},
     { input: "find the river", search: "e", expected: 12},
     { input: "hi", search: " ", expected: undefined},
+    { input: "hi mayor", search: " ", expected: undefined},
 ];
 
 
