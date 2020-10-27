@@ -10,6 +10,7 @@ interface TestParameter {
 
 const testParameters : TestParameter[] = [
     { input: "sims", search: "s", expected: 3},
+    { input: "find the river", search: "e", expected: 12},
 
 ];
 
