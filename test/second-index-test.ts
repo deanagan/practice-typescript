@@ -5,13 +5,13 @@ import { expect } from 'chai';
 interface TestParameter {
     input: string;
     search: string;
-    expected: number;
+    expected: number | undefined;
 }
 
 const testParameters : TestParameter[] = [
     { input: "sims", search: "s", expected: 3},
     { input: "find the river", search: "e", expected: 12},
-
+    { input: "hi", search: " ", expected: undefined},
 ];
 
 
