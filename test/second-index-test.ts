@@ -13,6 +13,7 @@ const testParameters : TestParameter[] = [
     { input: "find the river", search: "e", expected: 12},
     { input: "hi", search: " ", expected: undefined},
     { input: "hi mayor", search: " ", expected: undefined},
+    { input: "hi mr Mayor", search: " ", expected: 5}
 ];
 
 
