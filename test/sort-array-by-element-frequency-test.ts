@@ -15,6 +15,7 @@ const testParameters : TestParameter[] = [
     { input: ['bob', 'bob', 'carl', 'alex', 'bob'], expected: ['bob', 'bob', 'bob', 'carl', 'alex']},
     { input: [17, 99, 42], expected: [17, 99, 42]},
     { input: [], expected: []},
+    { input: [1], expected: [1]},
 ];
 
 
