@@ -1,12 +1,12 @@
 export function getSortedElementFrequency(items: any[]) : any[] {
 
-    function occurence(item: any) {
+    function frequencyCount(item: any) {
         return items.filter((e: any) => e == item).length;
     }
 
     return items.sort((a,b) =>
-        occurence(a) === occurence(b) ?
+    frequencyCount(a) === frequencyCount(b) ?
             items.indexOf(a) - items.indexOf(b) :
-            occurence(b) - occurence(a)
+            frequencyCount(b) - frequencyCount(a)
     );
 }
