@@ -12,7 +12,7 @@ interface TestParameter {
 
 const testParameters : TestParameter[] = [
     { input: [4, 6, 2, 2, 6, 4, 4, 4], expected: [4, 4, 4, 4, 6, 6, 2, 2]},
-
+    { input: ['bob', 'bob', 'carl', 'alex', 'bob'], expected: ['bob', 'bob', 'bob', 'carl', 'alex']}
 ];
 
 
