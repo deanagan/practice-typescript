@@ -1,5 +1,3 @@
-import { isConstructorDeclaration } from "typescript";
-
 
 export function isStressful(subj: string) : boolean {
     if (subj.endsWith('!!!') || (subj == subj.toUpperCase())) {
